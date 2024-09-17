@@ -22,23 +22,23 @@ function university_post_types()
         ),
         'menu_icon' => 'dashicons-calendar'
     ));
-    // register_post_type('progeam', array(
+    register_post_type('program', array(
 
-    //     'show_in_rest' => true,
-    //     'supports' => array('title', 'editor', 'excerpt','thumbnail',),
-    //     // 'rewrite' => array('slug' => 'su-kien'),
-    //     // 'has_archive' => true,
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt','thumbnail',),
+        // 'rewrite' => array('slug' => 'su-kien'),
+        // 'has_archive' => true,
      
-    //     'public' => true,
-    //     'labels' => array(
-    //         'name' => 'Programs',
-    //         'add_new_item' => 'Add New Program',
-    //         'edit_item' => 'Edit Programs',
-    //         'all_items' => 'All Programs',
-    //         'singular_name' => 'Program'
-    //     ),
-    //     'menu_icon' => 'dashicons-calendar'
-    // ));
+        'public' => true,
+        'labels' => array(
+            'name' => 'Programs',
+            'add_new_item' => 'Add New Program',
+            'edit_item' => 'Edit Programs',
+            'all_items' => 'All Programs',
+            'singular_name' => 'Program'
+        ),
+        'menu_icon' => 'dashicons-calendar'
+    ));
 }
 add_action('init', 'university_post_types');
 
