@@ -1,0 +1,45 @@
+.event-summary {
+  position: relative;
+  padding-left: 0;
+  /* Xóa padding-left để nội dung nằm sát bên trái */
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+  display: flex;
+  /* Sử dụng flexbox để sắp xếp nội dung */
+  align-items: center;
+  /* Căn giữa nội dung theo chiều dọc */
+}
+
+.event-summary__date {
+  text-decoration: none;
+  position: relative;
+  /* Đặt lại vị trí của .event-summary__date */
+  padding: 14px 0 11px 0;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: $mainBlue;
+  /* Giả định bạn đã định nghĩa biến này ở nơi khác */
+  width: 80px;
+  line-height: 1;
+  transition: opacity .33s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .22);
+  margin-right: 10px;
+  /* Thêm khoảng cách giữa ngày và nội dung */
+}
+
+.event-summary__date:hover {
+  opacity: .75;
+}
+
+.event-summary__month {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.event-summary__day {
+  display: block;
+  font-size: 2.02rem;
+  font-weight: 700;
+}
